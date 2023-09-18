@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>pdgo_test_51615</Name>
+  <AppVersion>2023-08-29T21:41:58Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.23082.20.0</CreatedByClientVersion>
+  <MinClientVersion>3.23082.20.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.23082.20","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","sienaVersion":"20230829T214158Z-3.23082.20.0"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+  <DisplayName>Test</DisplayName>
+  <Description xsi:nil="true"></Description>
+  <CommitMessage xsi:nil="true"></CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{"bba45bf4-3921-4cb6-a91a-d4b87581edbf":{"id":"/providers/microsoft.powerapps/apis/shared_logicflows","displayName":"Logic flows","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png","dataSources":["Getapprovalfortrainingrequest"],"dependencies":["7fa76481-accc-41f9-a0f5-837cbf271a99","bec9072f-a74f-48c1-90f8-5c78cd480163"],"dependents":[],"parameterHints":{"workflowName":{"value":"f63c23da-1f6a-4348-9728-4c6e1fc49698"},"workflowEntityId":{},"7fa76481-accc-41f9-a0f5-837cbf271a99":{"value":"shared_approvals_1"},"bec9072f-a74f-48c1-90f8-5c78cd480163":{"value":"shared_office365"}},"parameterHintsV2":{"workflowName":{"value":"f63c23da-1f6a-4348-9728-4c6e1fc49698"},"workflowEntityId":{},"shared_approvals_1":{"value":"7fa76481-accc-41f9-a0f5-837cbf271a99"},"shared_office365":{"value":"bec9072f-a74f-48c1-90f8-5c78cd480163"}},"isOnPremiseConnection":false,"dataSets":{},"apiTier":"Standard"},"7fa76481-accc-41f9-a0f5-837cbf271a99":{"id":"/providers/microsoft.powerapps/apis/shared_approvals","displayName":"Approvals","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1650/1.0.1650.3374/approvals/icon.png","dataSources":[],"dependencies":[],"dependents":["bba45bf4-3921-4cb6-a91a-d4b87581edbf"],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"dataSets":{},"apiTier":"Standard"},"bec9072f-a74f-48c1-90f8-5c78cd480163":{"id":"/providers/microsoft.powerapps/apis/shared_office365","displayName":"Office 365 Outlook","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1649/1.0.1649.3368/office365/icon.png","dataSources":[],"dependencies":[],"dependents":["bba45bf4-3921-4cb6-a91a-d4b87581edbf"],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"dataSets":{},"apiTier":"Standard"},"da87855f-8a93-4bcd-a195-df2095ba1c06":{"id":"/providers/microsoft.powerapps/apis/shared_office365","displayName":"Office 365 Outlook","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1649/1.0.1649.3368/office365/icon.png","dataSources":["Office365Outlook"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"dataSets":{},"apiTier":"Standard"},"fb9adf1c-a3c7-4213-bcac-7a4d53985386":{"id":"/providers/microsoft.powerapps/apis/shared_sharepointonline","displayName":"SharePoint","iconUri":"https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/sharepointonline/icon.png","dataSources":["Trainings"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"dataSets":{"https://csula.sharepoint.com/sites/SBPD-Group8-eschablowski_test":{"dataSources":{"Trainings":{"tableName":"8c4b4624-d691-4d4b-9b19-4c2f9a099722"}}}},"apiTier":"Standard","actions":["providers/PowerPlatform.Governance/Operations/Read"]}}</ConnectionReferences>
+  <DatabaseReferences>{}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>1</CanConsumeAppPass>
+  <CanvasAppType>0</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/pdgo_test_51615_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/pdgo_test_51615_DocumentUri.msapp</DocumentUri>
+</CanvasApp>

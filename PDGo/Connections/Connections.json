@@ -1,0 +1,107 @@
+{
+  "7fa76481-accc-41f9-a0f5-837cbf271a99": {
+    "connectionRef": {
+      "displayName": "Approvals",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1650/1.0.1650.3374/approvals/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_approvals"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "bba45bf4-3921-4cb6-a91a-d4b87581edbf"
+    ],
+    "id": "7fa76481-accc-41f9-a0f5-837cbf271a99"
+  },
+  "bba45bf4-3921-4cb6-a91a-d4b87581edbf": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "7fa76481-accc-41f9-a0f5-837cbf271a99": {
+          "value": "shared_approvals_1"
+        },
+        "bec9072f-a74f-48c1-90f8-5c78cd480163": {
+          "value": "shared_office365"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "33aa10bc-8a0b-40eb-af3c-c7686fd8f9ea"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_approvals_1": {
+          "value": "7fa76481-accc-41f9-a0f5-837cbf271a99"
+        },
+        "shared_office365": {
+          "value": "bec9072f-a74f-48c1-90f8-5c78cd480163"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "33aa10bc-8a0b-40eb-af3c-c7686fd8f9ea"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "Getapprovalfortrainingrequest"
+    ],
+    "dependencies": {
+      "shared_approvals_1": "7fa76481-accc-41f9-a0f5-837cbf271a99",
+      "shared_office365": "bec9072f-a74f-48c1-90f8-5c78cd480163"
+    },
+    "dependents": [],
+    "id": "bba45bf4-3921-4cb6-a91a-d4b87581edbf"
+  },
+  "bec9072f-a74f-48c1-90f8-5c78cd480163": {
+    "connectionRef": {
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1649/1.0.1649.3368/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "bba45bf4-3921-4cb6-a91a-d4b87581edbf"
+    ],
+    "id": "bec9072f-a74f-48c1-90f8-5c78cd480163"
+  },
+  "da87855f-8a93-4bcd-a195-df2095ba1c06": {
+    "connectionRef": {
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1649/1.0.1649.3368/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "da87855f-8a93-4bcd-a195-df2095ba1c06"
+  },
+  "fb9adf1c-a3c7-4213-bcac-7a4d53985386": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://csula.sharepoint.com/sites/SBPD-Group8-eschablowski_test": {
+        "dataSources": {
+          "Trainings": {
+            "tableName": "8c4b4624-d691-4d4b-9b19-4c2f9a099722"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Trainings"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "fb9adf1c-a3c7-4213-bcac-7a4d53985386"
+  }
+}

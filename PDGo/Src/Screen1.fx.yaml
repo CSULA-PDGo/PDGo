@@ -1,0 +1,36 @@
+Screen1 As screen:
+
+    Container1 As groupContainer.verticalAutoLayoutContainer:
+        Height: =364
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =25
+        LayoutMode: =LayoutMode.Auto
+        Width: =1333
+        ZIndex: =4
+
+        Label1 As label:
+            AutoHeight: =true
+            Size: =32
+            Text: ="Please select the desired training"
+            ZIndex: =1
+
+        ComboBox1 As combobox:
+            DisplayFields: =["Title"]
+            Items: =Trainings
+            OnChange: =
+            SearchFields: =["{Name}"]
+            SearchItems: =Search(Trainings,ComboBox1.SearchText,"{Name}")
+            SelectMultiple: =false
+            ZIndex: =2
+
+        Button2 As button:
+            FillPortions: =1
+            OnSelect: =Set(training_id, TrainingDropdown.Selected) && Navigate(Screen2)
+            Text: =""
+            ZIndex: =4
+
+        ListBox1 As listbox:
+            Items: =ListboxSample
+            ZIndex: =5
+
