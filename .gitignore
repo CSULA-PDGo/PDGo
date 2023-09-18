@@ -1,2 +1,5 @@
 # MSApps
 *.msapp
+
+# Configuration files
+settings.sh
