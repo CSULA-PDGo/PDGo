@@ -1,0 +1,37 @@
+name: 'Upload Main Application'
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+# Make sure we can only run one at a time
+concurrency:
+  group: '${{ github.workflow }}'
+  cancel-in-progress: true
+
+# The `jobs` key groups together all the jobs that run in the workflow file.
+jobs:
+  # This line defines a job with the ID `check-links` that is stored within the `jobs` key.
+  upload:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: setup-dotnet
+        uses: xt0rted/setup-dotnet@v1.5.0
+        with:
+          dotnet-version: 6.x
+      - name: install tools
+        run: dotnet tool install --global Microsoft.PowerApps.CLI.Tool
+      - name: Configure auths
+        run: |
+          mdkir -p ~/.local/share/Microsoft/PowerAppsCli
+          echo "$auth_json" > ~/.local/share/Microsoft/PowerAppsCli/authprofiles_v2.json
+        with:
+          auth_json: ${{ secrets.SuperSecret }}
+      - name: Package Solution
+        run: pac solution pack -f ./src -pca -z package.zip
+      - name: Upload Solution
+        run: pac solution import -p package.zip
