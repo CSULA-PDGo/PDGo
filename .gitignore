@@ -1,5 +1,8 @@
 # MSApps
 *.msapp
 
+# PowerPlatform Solutions
+*.zip
+
 # Configuration files
 settings.sh

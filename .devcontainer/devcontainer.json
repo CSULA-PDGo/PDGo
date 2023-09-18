@@ -1,33 +1,22 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/dotnet
+// README at: https://github.com/devcontainers/templates/tree/main/src/alpine
 {
-	"name": "C# (.NET)",
+	"name": "Alpine",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/dotnet:0-6.0",
+	"image": "mcr.microsoft.com/devcontainers/base:alpine-3.18",
 	"features": {
+		"ghcr.io/devcontainers-contrib/features/actionlint:1": {},
 		"ghcr.io/dhoeric/features/act:1": {}
-	},
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"microsoft-IsvExpTools.powerplatform-vscode"
-			]
-		}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [5000, 5001],
-	// "portsAttributes": {
-	//		"5001": {
-	//			"protocol": "https"
-	//		}
-	// }
+	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "dotnet restore",
+	// "postCreateCommand": "uname -a",
 
 	// Configure tool-specific properties.
 	// "customizations": {},

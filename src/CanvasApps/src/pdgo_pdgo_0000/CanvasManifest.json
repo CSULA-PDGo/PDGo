@@ -14,7 +14,6 @@
       "appinsightserrortracing": false,
       "appinstrumentationcorrelationtracing": false,
       "autocreateenvironmentvariables": false,
-      "backfromhostaction": false,
       "behaviorpropertyui": false,
       "blockmovingcontrol": true,
       "cdsdataformatting": false,
@@ -35,7 +34,7 @@
       "enabledataverseoffline": false,
       "enableeditcacherefreshfrequency": false,
       "enableexcelonlinebusinessv2connector": true,
-      "enableexperimentaldataverseoffline": false,
+      "enableexperimentaldataverseoffline": true,
       "enableideaspanel": true,
       "enablelegacybarcodescanner": false,
       "enableonstart": true,
@@ -45,7 +44,7 @@
       "enablerpawarecomponentdependency": true,
       "enablerulespanel": false,
       "enableruntimepolicies": true,
-      "enablesaveloadcleardataonweb": false,
+      "enablesaveloadcleardataonweb": true,
       "enableupdateifdelegation": false,
       "enhanceddelegation": true,
       "enhancedgalleryinitialization": true,
@@ -95,7 +94,7 @@
       "zeroalltabindexes": true
     },
     "Author": "",
-    "BindingErrorCount": 16,
+    "BindingErrorCount": 0,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -107,18 +106,18 @@
     "DocumentLayoutWidth": 1366,
     "DocumentType": "App",
     "EnableInstrumentation": false,
-    "FileID": "4367b22d-c441-48dd-a030-bc1e5bd1ba6a",
-    "Id": "17708310-78c6-4ad3-ae05-c6aa945034a4",
+    "FileID": "1a43076d-ec88-4a38-87ef-d7271e9252f9",
+    "Id": "1a43076d-ec88-4a38-87ef-d7271e9252f9",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
     "ManualOfflineProfileId": null,
-    "Name": "Test",
+    "Name": "PDGo",
     "OriginatingVersion": "1.334",
     "ParserErrorCount": 0,
     "ShowStatusBar": false
   },
   "PublishInfo": {
-    "AppName": "Test",
+    "AppName": "PDGo",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
@@ -129,7 +128,6 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Screen1",
-    "Screen2"
+    "Screen1"
   ]
 }
