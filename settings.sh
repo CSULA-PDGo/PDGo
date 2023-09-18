@@ -1,0 +1,1 @@
+export solutionName="<Your Name>"
