@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>pdgo_pdgo_0000</Name>
   <AppVersion>2023-09-18T05:24:31Z</AppVersion>
@@ -7,12 +7,12 @@
   <MinClientVersion>3.23084.14.0</MinClientVersion>
   <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.23084.14","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","sienaVersion":"20230918T052431Z-3.23084.14.0"}</Tags>
   <IsCdsUpgraded>0</IsCdsUpgraded>
-  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <GalleryItemId xsi:nil="true"/>
   <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
   <DisplayName>PDGo</DisplayName>
-  <Description xsi:nil="true"></Description>
-  <CommitMessage xsi:nil="true"></CommitMessage>
-  <Publisher xsi:nil="true"></Publisher>
+  <Description xsi:nil="true"/>
+  <CommitMessage xsi:nil="true"/>
+  <Publisher xsi:nil="true"/>
   <AuthorizationReferences>[]</AuthorizationReferences>
   <ConnectionReferences>{}</ConnectionReferences>
   <DatabaseReferences>{}</DatabaseReferences>
@@ -22,10 +22,10 @@
   <CanvasAppType>0</CanvasAppType>
   <BypassConsent>0</BypassConsent>
   <AdminControlBypassConsent>0</AdminControlBypassConsent>
-  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <EmbeddedApp xsi:nil="true"/>
   <IntroducedVersion>1.0</IntroducedVersion>
   <CdsDependencies>{"cdsdependencies":[]}</CdsDependencies>
   <IsCustomizable>1</IsCustomizable>
-  <BackgroundImageUri>/CanvasApps/pdgo_pdgo_0000_BackgroundImageUri.png</BackgroundImageUri>
-  <DocumentUri>/CanvasApps/pdgo_pdgo_0000_DocumentUri.msapp</DocumentUri>
+  <BackgroundImageUri>/CanvasApps/.png</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/.msapp</DocumentUri>
 </CanvasApp>

@@ -1,16 +1,20 @@
-SolutionRoot=.
-appName=$2
-oldAppName=$1
+solutionRoot=.
+appName=$3
+oldAppName=$2
+solutionName=$1
 # Update Solution.xml
-xml ed -u "/ImportExportXml/SolutionManifest/UniqueName" -v $solutionName $solutionRoot/src/Other/Solution.xml
-xml ed -u "/ImportExportXml/SolutionManifest/LocalizedNames/LocalizedName[@languagecode=1033]/@description" -v $solutionName $solutionRoot/src/Other/Solution.xml
-xml ed -u "/ImportExportXml/SolutionManifest/RootComponents/RootComponent[@schemaName=pdgo_pdgo_0000]" -v $appName $solutionRoot/src/Other/Solution.xml
+echo "Updating Solution.xml"
+xml ed -L -u "/ImportExportXml/SolutionManifest/UniqueName" -v $solutionName $solutionRoot/src/Other/Solution.xml
+xml ed -L -u "/ImportExportXml/SolutionManifest/LocalizedNames/LocalizedName[@languagecode=1033]/@description" -v $solutionName $solutionRoot/src/Other/Solution.xml
+xml ed -L -u "/ImportExportXml/SolutionManifest/RootComponents/RootComponent[@schemaName=$oldAppName]" -v $appName $solutionRoot/src/Other/Solution.xml
 
 # Update the CanvasApp file
-xml ed -u "/CanvasApp/Name" -v $appName $solutionRoot/src/CanvasApps/pdgo_pdgo_0000.xml
-xml ed -u "/CanvasApp/BackgroundImageUri" -v /CanvasApps/$appName.png $solutionRoot/src/CanvasApps/pdgo_pdgo_0000.xml
-xml ed -u "/CanvasApp/DocumentUri" -v /CanvasApps/$appName.msapp $solutionRoot/src/CanvasApps/pdgo_pdgo_0000.xml
+echo "Updating CanvasApp file"
+xml ed -L -u "/CanvasApp/Name" -v $appName $solutionRoot/src/CanvasApps/$oldAppName.meta.xml
+xml ed -L -u "/CanvasApp/BackgroundImageUri" -v /CanvasApps/$appName_BackgroundImageUri.png $solutionRoot/src/CanvasApps/$oldAppName.meta.xml
+xml ed -L -u "/CanvasApp/DocumentUri" -v /CanvasApps/$appName_DocumentUri.msapp $solutionRoot/src/CanvasApps/$oldAppName.meta.xml
 
 # Rename the files
-rename "s/$appName/pdgo_pdgo_0000" $solutionRoot/src/CanvasApps/*.*
-mv $solutionRoot/src/CanvasApps/src/$appName $solutionRoot/src/CanvasApps/src/pdgo_pdgo_0000
+echo "Renaming files"
+file-rename "s/$oldAppName/$appName/" $solutionRoot/src/CanvasApps/*.*
+mv $solutionRoot/src/CanvasApps/src/$oldAppName $solutionRoot/src/CanvasApps/src/$appName
