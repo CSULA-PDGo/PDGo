@@ -31,10 +31,11 @@ jobs:
       # Configure
       - name: Configure auths
         run: |
-          mkdir -p ~/.local/share/Microsoft/PowerAppsCli
-          echo "$auth_json" > ~/.local/share/Microsoft/PowerAppsCli/authprofiles_v2.json
+          pac auth create --name CalStateLA --url https://csula.onmicrosoft.com --applicationId $application_id --clientSecret $client_secret --tenant $tenant_id
         env:
-          auth_json: ${{ secrets.SuperSecret }}
+          application_id: ${{ secrets.PAC_APPLICATION_ID }}
+          client_secret: ${{ secrets.PAC_CLIENT_SECRET }}
+          tenant_id: ${{ secrets.PAC_TENANT }}
 
       # Upload
       - name: Package Solution
