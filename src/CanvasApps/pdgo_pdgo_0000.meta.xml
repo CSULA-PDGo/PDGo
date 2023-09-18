@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>pdgo_pdgo_0000</Name>
-  <AppVersion>2023-09-18T05:24:31Z</AppVersion>
+  <AppVersion>2023-09-18T07:23:51Z</AppVersion>
   <Status>Ready</Status>
   <CreatedByClientVersion>3.23084.14.0</CreatedByClientVersion>
   <MinClientVersion>3.23084.14.0</MinClientVersion>
@@ -9,23 +9,20 @@
   <IsCdsUpgraded>0</IsCdsUpgraded>
   <GalleryItemId xsi:nil="true"/>
   <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
-  <DisplayName>PDGo</DisplayName>
-  <Description xsi:nil="true"/>
-  <CommitMessage xsi:nil="true"/>
-  <Publisher xsi:nil="true"/>
+  <DisplayName>PDGo_202309180723</DisplayName>
+  <Description/>
+  <CommitMessage/>
+  <Publisher/>
   <AuthorizationReferences>[]</AuthorizationReferences>
   <ConnectionReferences>{}</ConnectionReferences>
   <DatabaseReferences>{}</DatabaseReferences>
-  <AppComponents>[]</AppComponents>
-  <AppComponentDependencies>[]</AppComponentDependencies>
   <CanConsumeAppPass>1</CanConsumeAppPass>
   <CanvasAppType>0</CanvasAppType>
   <BypassConsent>0</BypassConsent>
-  <AdminControlBypassConsent>0</AdminControlBypassConsent>
   <EmbeddedApp xsi:nil="true"/>
   <IntroducedVersion>1.0</IntroducedVersion>
   <CdsDependencies>{"cdsdependencies":[]}</CdsDependencies>
   <IsCustomizable>1</IsCustomizable>
-  <BackgroundImageUri>/CanvasApps/.png</BackgroundImageUri>
-  <DocumentUri>/CanvasApps/.msapp</DocumentUri>
+  <BackgroundImageUri>/CanvasApps/pdgo_pdgo_0000.png</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/pdgo_pdgo_0000.msapp</DocumentUri>
 </CanvasApp>

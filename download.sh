@@ -1,7 +1,9 @@
 . ./settings.sh
-appName=pdgo_$solutionName_$pdGoNumber
+appName=pdgo_$solutionName\_$pdGoNumber
+
+./scripts/rename.sh $solutionName pdgo_pdgo_0000 $appName
 
 # Download the customized solution from PowerPlatform
-pack solution export --name $solutionName -pca
+pac solution sync -pca
 
-./scripts/rename $solutionName $appName pdgo_pdgo_0000
+./scripts/rename.sh $solutionName $appName pdgo_pdgo_0000
