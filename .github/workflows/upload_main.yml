@@ -31,7 +31,7 @@ jobs:
       # Configure
       - name: Configure auths
         run: |
-          mdkir -p ~/.local/share/Microsoft/PowerAppsCli
+          mkdir -p ~/.local/share/Microsoft/PowerAppsCli
           echo "$auth_json" > ~/.local/share/Microsoft/PowerAppsCli/authprofiles_v2.json
         env:
           auth_json: ${{ secrets.SuperSecret }}
