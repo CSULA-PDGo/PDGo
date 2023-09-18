@@ -3,11 +3,8 @@
 {
 	"name": "Alpine",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:alpine-3.18",
-	"features": {
-		"ghcr.io/devcontainers-contrib/features/actionlint:1": {},
-		"ghcr.io/dhoeric/features/act:1": {}
-	}
+	"dockerFile": "Dockerfile",
+	"features": {},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -16,7 +13,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
+	"postCreateCommand": "pac auth create"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
