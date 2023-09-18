@@ -19,18 +19,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
+      # Install
       - name: setup-dotnet
         uses: xt0rted/setup-dotnet@v1.5.0
         with:
           dotnet-version: 6.x
       - name: install tools
         run: dotnet tool install --global Microsoft.PowerApps.CLI.Tool
+
+      # Configure
       - name: Configure auths
         run: |
           mdkir -p ~/.local/share/Microsoft/PowerAppsCli
           echo "$auth_json" > ~/.local/share/Microsoft/PowerAppsCli/authprofiles_v2.json
-        with:
+        env:
           auth_json: ${{ secrets.SuperSecret }}
+
+      # Upload
       - name: Package Solution
         run: pac solution pack -f ./src -pca -z package.zip
       - name: Upload Solution
