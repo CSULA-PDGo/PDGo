@@ -28,21 +28,23 @@ jobs:
       - name: install tools
         run: dotnet tool install --global Microsoft.PowerApps.CLI.Tool
 
-      # Configure
-      # - name: Configure auths
-      #   run: |
-      #     mkdir -p ~/.local/share/Microsoft/PowerAppsCli
-      #     echo "$auth_json" > ~/.local/share/Microsoft/PowerAppsCli/authprofiles_v2.json
-      #   env:
-      #     auth_json: ${{ secrets.MAIN_UPLOAD_AUTH }}
 
-      # Upload
+      # Package and archive
       - name: Package Solution
         run: pac solution pack -f ./src -pca -z package.zip
-      # - name: Upload Solution
-      #   run: pac solution import -p package.zip
       - name: Upload Package to GH Actions
         uses: actions/upload-artifact@v3
         with:
           name: Solution
           path: package.zip
+
+      # Upload to PowerPlatform
+      - name: Configure auths
+        run: |
+          pac auth create --name CalStateLA --applicationId $application_id --clientSecret $client_secret --tenant $tenant_id
+        env:
+          application_id: ${{ secrets.PAC_APPLICATION_ID }}
+          client_secret: ${{ secrets.PAC_CLIENT_SECRET }}
+          tenant_id: ${{ secrets.PAC_TENANT }}
+      - name: Upload Solution
+        run: pac solution import -p package.zip
