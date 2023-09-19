@@ -42,6 +42,7 @@ jobs:
       - name: Configure auths
         run: |
           pac auth create --name CalStateLA --applicationId $application_id --clientSecret $client_secret --tenant $tenant_id
+          pac auth select --name CalStateLA
         env:
           application_id: ${{ secrets.PAC_APPLICATION_ID }}
           client_secret: ${{ secrets.PAC_CLIENT_SECRET }}
