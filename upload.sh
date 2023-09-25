@@ -8,4 +8,4 @@ pac solution pack -f ./src -pca -z package.zip
 pac solution import -p package.zip
 
 # Normalize the names again
-./scripts/rename.sh $solutionName $appName pdgo_pdgo_0000
+./scripts/rename.sh pdgo $appName pdgo_pdgo_0000
