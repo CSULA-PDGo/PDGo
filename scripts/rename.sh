@@ -17,4 +17,5 @@ xml ed -L -u "/CanvasApp/DocumentUri" -v /CanvasApps/$appName.msapp $solutionRoo
 # Rename the files
 echo "Renaming files"
 file-rename "s/$oldAppName\_\w*/$appName/" $solutionRoot/src/CanvasApps/*.*
+file-rename "s/$oldAppName/$appName/" $solutionRoot/src/CanvasApps/*.meta.xml
 mv $solutionRoot/src/CanvasApps/src/$oldAppName $solutionRoot/src/CanvasApps/src/$appName

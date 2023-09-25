@@ -16,8 +16,11 @@
 ![Reopen in Container](./assets/Reopen%20in%20Container.png)
 
 5. Wait for the download/install inside the container to complete
-6. Select your student account (...@calstatela.edu) to log into PowerApps
-7. Go back to VSCode
+6. Run `pac auth create` in the VSCode Integrated Terminal
+    1. If a browser opens automatically, proceed to the next step
+    2. If you get a prompt that the browser cannot be opened, use the provided link, and enter the provided code, then proceed to the next step.
+7. Select your student account (...@calstatela.edu) to log into PowerApps
+8. Go back to VSCode
 
 
 ## 4. Change settings to allow adjustments in web UI

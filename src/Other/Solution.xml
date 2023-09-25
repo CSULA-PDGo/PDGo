@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="9.2.23082.190" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive">
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="9.2.23083.184" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive">
   <SolutionManifest>
-    <UniqueName>PDGoMain</UniqueName>
+    <UniqueName>pdgo</UniqueName>
     <LocalizedNames>
-      <LocalizedName description="PDGoMain" languagecode="1033"/>
+      <LocalizedName description="pdgo" languagecode="1033"/>
     </LocalizedNames>
     <Descriptions/>
     <Version>1.0.0.0</Version>

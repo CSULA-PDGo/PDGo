@@ -1,2 +1,2 @@
-export solutionName="pdgoelias"
-export pdGoNumber="6649"
+export solutionName="<Your Name>"
+export pdGoNumber="<Your Number>"
